@@ -1,0 +1,91 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-image: url("../img/blue-sky-with-stars-4k_1551643678.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}
+.main{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	    z-index: 10;
+    display: flex;
+}
+.container path{
+	fill:#296f9a;
+	stroke:#51c9ec;
+	stroke-width:3px;
+	transition: fill 0.4s;
+}
+svg{
+	width: 500px;
+	height: 500px;
+}
+path:hover {
+	fill:#1f94c1;
+	cursor: pointer;
+}
+.display {
+	margin: 0 50px 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 280px;
+    height: 450px;
+    position: relative;
+    box-shadow: 0px 0px 12px 5px rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: #1a6ca6;
+    z-index: 1;
+}
+
+
+.country {
+	z-index: 10;
+    color: white;
+    position: absolute;
+    padding: 15px;
+    letter-spacing: 3px;
+    font-family: monospace;
+    
+}
+
+#region{
+	font-size: 20px;
+	text-transform: uppercase;
+}
+#celcus{
+font-size: 55px;
+margin: 20px 0;
+}
+#weather{
+font-size: 19px;
+}
+.content{
+	display: flex;
+    padding: 30px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    
+}
+.plane{
+	width: 100px;
+    height: 70px;
+    position: absolute;
+    top:70%;
+    left: 50%;
+    transition: top 3s,left 3s;
+    z-index: 999999;
+}
+
